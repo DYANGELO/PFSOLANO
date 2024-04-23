@@ -169,7 +169,7 @@
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #078832;
@@ -240,5 +240,4 @@
 .destino ul li:last-child {
   margin-bottom: 0;
 }
-
 /*# sourceMappingURL=style.css.map */
