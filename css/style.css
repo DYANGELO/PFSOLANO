@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -14,6 +15,59 @@
   grid-area: footer;
 }
 
+@media screen and (max-width: 460px) {
+  .social-media-link {
+    margin: 0 5px; /* Ajustado para pantallas pequeñas */
+  }
+  .contenedor {
+    flex-direction: column;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  .boton {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  .boton {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 460px) {
+  .social-media-link {
+    margin: 0 5px; /* Ajustado para pantallas pequeñas */
+  }
+}
+@media (max-width: 760px) {
+  .social-media-link {
+    margin: 0 5px; /* Ajustado para pantallas pequeñas */
+  }
+}
 .navbar {
   background-color: #078832;
   color: #fff;
@@ -106,6 +160,14 @@
   margin-right: auto;
 }
 
+.llamar {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -119,24 +181,24 @@
   justify-content: center;
   align-items: center;
 }
-.footer .contenido-footer {
+.footer .contenedor-2 .contenido-footer {
   display: flex;
   align-items: center;
 }
-.footer .link-redes {
+.footer .contenedor-2 .contenido-footer .link-redes {
   display: flex;
   align-items: center;
 }
-.footer .social-media-link {
+.footer .contenedor-2 .contenido-footer .link-redes .social-media-link {
   display: flex;
   align-items: center;
-  margin: 0 100px;
+  margin: 0 10px;
 }
-.footer img {
+.footer .contenedor-2 .contenido-footer .link-redes .social-media-link img {
   width: 30px;
   height: auto;
 }
-.footer p {
+.footer .contenedor-2 .contenido-footer .link-redes .social-media-link img p {
   margin: 0;
 }
 

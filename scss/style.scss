@@ -1,6 +1,78 @@
 @import "_separaciones";
 
+@media screen and (max-width: 460px) {
 
+    .social-media-link {
+        margin: 0 5px; /* Ajustado para pantallas pequeñas */
+    }
+
+
+    .contenedor {
+      flex-direction: column;
+    }
+    
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .boton {
+      margin-top: 10px;
+    }
+    
+    
+  }
+
+  @media screen and (max-width: 760px) {
+
+    .contenedor {
+      flex-direction: column;
+    }
+    
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .boton {
+      margin-top: 10px;
+    }
+
+  }
+  
+  
+@media (max-width: 460px) {
+    .social-media-link {
+        margin: 0 5px; /* Ajustado para pantallas pequeñas */
+    }
+}
+
+
+@media (max-width: 760px) {
+    .social-media-link {
+        margin: 0 5px; /* Ajustado para pantallas pequeñas */
+    }
+}
 
 .navbar {
     background-color: #078832;
@@ -106,7 +178,13 @@
     margin-right: auto;
   }
   
-
+  .llamar{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 80px;
+    right: 10px  ;
+}
 
   .footer {
     position: fixed;
@@ -115,39 +193,37 @@
     background-color: #078832;
     color: #fff;
     padding: 5px 0;
-  
     .contenedor-2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contenido-footer {
+            display: flex;
+            align-items: center;
+            .link-redes {
+                display: flex;
+                align-items: center;
+                .social-media-link {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 10px; 
+                    img {
+                        width: 30px;
+                        height: auto;
+                        p {
+                            margin: 0;
+                        }
+                        
+                    }
+                    
+                }
+
+            }
+        }
     }
-  
-    .contenido-footer {
-      display: flex;
-      align-items: center;
-    }
-  
-    .link-redes {
-      display: flex;
-      align-items: center;
-    }
-  
-    .social-media-link {
-      display: flex;
-      align-items: center;
-      margin: 0 100px; // Espacio entre los logos
-    }
-  
-    img {
-      width: 30px; 
-      height: auto;
-    }
-  
-    p {
-      margin: 0;
-    }
-  }
-  
+}
+
+
 
 
 .destino {
