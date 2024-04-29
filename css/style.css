@@ -15,6 +15,16 @@
   grid-area: footer;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media screen and (max-width: 460px) {
   .social-media-link {
     margin: 0 5px; /* Ajustado para pantallas pequeñas */
@@ -72,6 +82,7 @@
   background-color: #078832;
   color: #fff;
   padding: 10px 0;
+  border-radius: 20px;
 }
 .navbar .contenedor {
   display: flex;
@@ -87,6 +98,14 @@
   color: #fff;
   text-decoration: none;
   padding: 10px;
+  transition: all 1s;
+}
+.navbar .contenedor .izquierda .logo:hover {
+  font-size: 30px;
+  color: #000000;
+  border-radius: 30px;
+  background-color: #ddd;
+  margin-left: 2px;
 }
 .navbar .contenedor .izquierda .boton {
   margin-left: 20px;
@@ -105,24 +124,29 @@
 .navbar .contenedor .izquierda .boton button[type=submit]:hover {
   background-color: #ddd;
 }
-.navbar .contenedor .nav-links {
+.navbar .nav-links {
   list-style: none;
   margin: 10px;
   padding: 10PX;
+  display: flex;
+  justify-content: flex-end;
 }
-.navbar .contenedor .nav-links li {
+.navbar .nav-links li {
   display: inline;
   margin-left: 20px;
 }
-.navbar .contenedor .nav-links li:first-child {
+.navbar .nav-links li:first-child {
   margin-left: 0;
 }
-.navbar .contenedor .nav-links li a {
+.navbar .nav-links li a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s;
 }
-.navbar .contenedor .nav-links li a:hover {
-  text-decoration: underline;
+.navbar .nav-links li a:hover {
+  border-radius: 10px;
+  background-color: #000000;
+  font-size: 24px;
 }
 
 .titulo {
@@ -160,50 +184,72 @@
   margin-right: auto;
 }
 
-.llamar {
-  height: 50px;
-  width: 50px;
-  position: fixed;
-  bottom: 80px;
-  right: 10px;
-}
-
-.footer {
-  position: relative;
+footer {
   bottom: 0;
+  height: 50%;
   width: 100%;
   background-color: #078832;
   color: #fff;
+  display: flex;
+}
+footer .logo-d {
+  width: 200px;
+  height: 200px;
+  padding: 2px 0;
+}
+footer .derechos {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  width: 100%;
   padding: 5px 0;
 }
-.footer .contenedor-2 {
+footer .contenedor-2 {
+  display: flex;
+  justify-content: space-between;
+}
+footer .contenedor-2 .apartado-a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .contenedor-2 .contenido-footer {
+footer .contenedor-2 .apartado-a ol {
+  margin-top: auto;
+  list-style: none;
+}
+footer .contenedor-2 .apartado-a ol li {
+  margin-bottom: 15px;
+}
+footer .contenedor-2 .apartado-a ol li h2 {
+  font-weight: bold;
+}
+footer .contenido-footer {
   display: flex;
   align-items: center;
 }
-.footer .contenedor-2 .contenido-footer .link-redes {
+footer .contenido-footer .link-redes {
   display: flex;
   align-items: center;
+  margin-top: auto;
 }
-.footer .contenedor-2 .contenido-footer .link-redes .social-media-link {
+footer .contenido-footer .link-redes .social-media-link {
   display: flex;
   align-items: center;
+  justify-items: flex-end;
+  position: relative;
   margin: 0 10px;
 }
-.footer .contenedor-2 .contenido-footer .link-redes .social-media-link img {
+footer .contenido-footer .link-redes .social-media-link img {
   width: 30px;
   height: auto;
+  transition: all 1s;
 }
-.footer .contenedor-2 .contenido-footer .link-redes .social-media-link img p {
-  margin: 0;
+footer .contenido-footer .link-redes .social-media-link img:hover {
+  width: 50px;
 }
 
 .destino {
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   margin: 20px auto;
   padding: 20px;
@@ -211,6 +257,17 @@
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+}
+.destino:hover {
+  background-color: #078832;
+  width: 100%;
+}
+.destino:hover p {
+  color: #ddd;
+}
+.destino:hover li {
+  color: #ddd;
 }
 .destino .imagen {
   float: right;
@@ -219,6 +276,10 @@
 .destino .imagen img {
   max-width: 200px;
   border-radius: 5px;
+  transition: all 2s;
+}
+.destino .imagen img:hover {
+  max-width: 250px;
 }
 .destino h4 {
   font-size: 20px;
@@ -240,4 +301,26 @@
 .destino ul li:last-child {
   margin-bottom: 0;
 }
+
+.catalogo-t {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(44, 156, 231, 0.5019607843);
+}
+.catalogo-t h1 {
+  margin: 20px;
+  padding: 10px;
+  transition: all 1.2s;
+  animation: fadeIn 1s ease-out;
+}
+.catalogo-t h1:hover {
+  text-shadow: 2px 2px 4px rgba(218, 20, 20, 0.5019607843);
+  font-size: 60px;
+}
+
+.sub-t {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
