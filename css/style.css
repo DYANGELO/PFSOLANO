@@ -25,6 +25,17 @@
     transform: translateY(0);
   }
 }
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (max-width: 460px) {
   .social-media-link {
     margin: 0 5px; /* Ajustado para pantallas pequeñas */
@@ -321,6 +332,9 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
 
 .sub-t {
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(44, 156, 231, 0.5019607843);
+  padding: 10px 0;
+  animation: zoomInOut 4s ease-in-out infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
