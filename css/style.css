@@ -4,6 +4,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   gap: 0px;
+  grid-template-areas: "nav" "footer";
 }
 
 .nav {
@@ -11,11 +12,7 @@
 }
 
 .footer {
-  width: 95%;
-  margin: auto;
   grid-area: footer;
-  margin-bottom: 5px;  
-  padding-bottom: 2.5px;
 }
 
 .spc-1 {
@@ -38,11 +35,15 @@
 .spc-1 .col .card ol li {
   padding: 10px;
 }
-.header{
-  width: 95%;
-  padding-top: 1px;
-  margin: auto;
+
+.sub-t {
+  width: 99%;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(44, 156, 231, 0.5019607843);
+  padding: 10px 0;
+  animation: zoomInOut 4s ease-in-out infinite;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -53,21 +54,20 @@
   justify-content: space-around;
   align-items: center;
   margin: 50px;
+  border: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .apartado-a1 img {
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 250px;
 }
-
-.apartado-a2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 50px;
+.apartado-a1 h5 {
+  margin-top: 30px;
+  margin-left: 30px;
 }
-.apartado-a2 img {
-  height: 100px;
-  width: 100px;
+.apartado-a1 P {
+  margin: 30px;
 }
 
 @keyframes fadeIn {
@@ -248,6 +248,7 @@ footer {
   background-color: #078832;
   color: #fff;
   display: flex;
+  display: inline-block;
 }
 footer .logo-d {
   width: 200px;
@@ -374,14 +375,6 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
 .catalogo-t h1:hover {
   text-shadow: 2px 2px 4px rgba(218, 20, 20, 0.5019607843);
   font-size: 60px;
-}
-
-.sub-t {
-  width: 99%;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(44, 156, 231, 0.5019607843);
-  padding: 10px 0;
-  animation: zoomInOut 4s ease-in-out infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

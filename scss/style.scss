@@ -212,6 +212,7 @@
     background-color: #078832;
     color: #fff;  
     display: flex;
+    display: inline-block;
     .logo-d{
       width: 200px;
       height: 200px;
@@ -246,7 +247,6 @@
       .contenido-footer {
         display: flex;
         align-items: center;
-        
         .link-redes {
             display: flex;
             align-items: center;
@@ -347,13 +347,5 @@
   }
 }
   
-.sub-t{
- width: 99%;
- text-align: center;
- text-shadow: 2px 2px 4px #2c9ce780;
- padding: 10px 0;
- animation: zoomInOut 4s ease-in-out infinite;
-}  
-
 
 
