@@ -4,7 +4,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   gap: 0px;
-  grid-template-areas: "nav" "footer";
 }
 
 .nav {
@@ -12,7 +11,11 @@
 }
 
 .footer {
+  width: 95%;
+  margin: auto;
   grid-area: footer;
+  margin-bottom: 5px;  
+  padding-bottom: 2.5px;
 }
 
 .spc-1 {
@@ -35,7 +38,11 @@
 .spc-1 .col .card ol li {
   padding: 10px;
 }
-
+.header{
+  width: 95%;
+  padding-top: 1px;
+  margin: auto;
+}
 * {
   margin: 0;
   padding: 0;
