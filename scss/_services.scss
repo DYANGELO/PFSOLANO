@@ -1,0 +1,23 @@
+.spc-1{
+    margin: 2rem;
+    padding: 1%;
+    .col{
+        padding: 25px;
+        .card{
+            width: 100%;
+            border-radius: 50px;
+            align-items: center;
+        
+            img{
+                padding: 25px;
+                width: 100%;
+                border-radius: 50px;
+            }
+            ol{
+                li{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

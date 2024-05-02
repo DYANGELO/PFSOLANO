@@ -15,6 +15,54 @@
   grid-area: footer;
 }
 
+.spc-1 {
+  margin: 2rem;
+  padding: 1%;
+}
+.spc-1 .col {
+  padding: 25px;
+}
+.spc-1 .col .card {
+  width: 100%;
+  border-radius: 50px;
+  align-items: center;
+}
+.spc-1 .col .card img {
+  padding: 25px;
+  width: 100%;
+  border-radius: 50px;
+}
+.spc-1 .col .card ol li {
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.apartado-a1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+.apartado-a1 img {
+  height: 100px;
+  width: 100px;
+}
+
+.apartado-a2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+.apartado-a2 img {
+  height: 100px;
+  width: 100px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -170,6 +218,7 @@
 .main-title {
   font-size: 36px;
   color: #000000;
+  margin: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
@@ -183,16 +232,6 @@
 .titulo {
   text-align: center;
   margin-top: 50px;
-}
-
-.fondo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("../Imagenes/660f1b49c1c43.jpeg") center center no-repeat;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 footer {
@@ -331,6 +370,7 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
 }
 
 .sub-t {
+  width: 99%;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(44, 156, 231, 0.5019607843);
   padding: 10px 0;

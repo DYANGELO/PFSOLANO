@@ -1,4 +1,6 @@
 @import "_separaciones";
+@import "_services";
+@import "_about"; 
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -185,8 +187,9 @@
   }
   
   .main-title {
-    font-size: 36px;
-    color: #000000; 
+    font-size: 36px;  
+    color: #000000;
+    margin: 15px; 
     text-transform: uppercase; 
     letter-spacing: 2px; 
     font-weight: bold;
@@ -200,16 +203,6 @@
   .titulo {
     text-align: center;
     margin-top: 50px; 
-  }
-  
-  .fondo {
-    position: absolute;
-    width: 100%; 
-    height: 100%; 
-    background: url('../Imagenes/660f1b49c1c43.jpeg') center center no-repeat; 
-    background-size: cover; 
-    margin-left: auto;
-    margin-right: auto;
   }
   
   footer {
@@ -355,8 +348,12 @@
 }
   
 .sub-t{
+ width: 99%;
  text-align: center;
  text-shadow: 2px 2px 4px #2c9ce780;
  padding: 10px 0;
  animation: zoomInOut 4s ease-in-out infinite;
 }  
+
+
+
