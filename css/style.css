@@ -36,12 +36,34 @@
   padding: 10px;
 }
 
-.sub-t {
-  width: 99%;
+.sub {
+  max-width: 100%;
+  margin: 10px;
+  padding: 10px 20;
+}
+.sub .sub-t {
+  width: 100%;
+  font-size: 35px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(44, 156, 231, 0.5019607843);
   padding: 10px 0;
   animation: zoomInOut 4s ease-in-out infinite;
+  margin-right: 2%;
+}
+
+.formulario-s {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.formulario-s .mb-3 {
+  margin: 25px;
+}
+.formulario-s .btn {
+  margin: 25px;
 }
 
 * {
@@ -82,13 +104,13 @@
 }
 @keyframes zoomInOut {
   0% {
-    transform: scale(1);
+    transform: scale(0.5);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(0.8);
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.5);
   }
 }
 @media screen and (max-width: 460px) {
@@ -145,10 +167,12 @@
   }
 }
 .navbar {
+  margin: 5px;
   background-color: #078832;
   color: #fff;
   padding: 10px 0;
   border-radius: 20px;
+  justify-content: space-around;
 }
 .navbar .contenedor {
   display: flex;
@@ -195,7 +219,7 @@
   margin: 10px;
   padding: 10PX;
   display: flex;
-  justify-content: flex-end;
+  margin-right: 35px;
 }
 .navbar .nav-links li {
   display: inline;
@@ -242,13 +266,15 @@
 }
 
 footer {
+  margin: 5px;
   bottom: 0;
   height: 50%;
-  width: 100%;
+  width: 99.2%;
   background-color: #078832;
   color: #fff;
   display: flex;
   display: inline-block;
+  border-radius: 25px;
 }
 footer .logo-d {
   width: 200px;

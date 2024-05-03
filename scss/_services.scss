@@ -21,12 +21,37 @@
         }
     }
 }
-.sub-t{
-    width: 99%;
-    text-align: center;
-    text-shadow: 2px 2px 4px #2c9ce780;
-    padding: 10px 0;
-    animation: zoomInOut 4s ease-in-out infinite;
-   }  
+
+.sub{
+ max-width: 100%;
+ margin: 10px;
+ padding: 10px 20;
+
+    .sub-t{
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        text-shadow: 2px 2px 4px #2c9ce780;
+        padding: 10px 0;
+        animation: zoomInOut 4s ease-in-out infinite;
+        margin-right: 2%;
+       }  
+}
+
+.formulario-s{
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    .mb-3{
+        margin: 25px;
+    }
+    .btn{
+        margin: 25px;
+    }
+}
    
-   
+    
