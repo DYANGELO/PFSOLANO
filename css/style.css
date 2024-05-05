@@ -91,6 +91,25 @@
 .apartado-a1 P {
   margin: 30px;
 }
+.apartado-a1 .az-nosotros {
+  border-radius: 50%;
+  width: 200px;
+  padding: 5px;
+  height: 200px;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 30px;
+}
 
 @keyframes fadeIn {
   from {
@@ -243,7 +262,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  margin-top: 50px;
+  padding: 35px;
 }
 
 .main-title {
@@ -258,11 +277,6 @@
 
 .contenedor-3 {
   position: relative;
-}
-
-.titulo {
-  text-align: center;
-  margin-top: 50px;
 }
 
 footer {
@@ -358,32 +372,20 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   margin-left: 20px;
 }
 .destino .imagen img {
-  max-width: 200px;
+  max-width: 250px;
   border-radius: 5px;
   transition: all 2s;
 }
 .destino .imagen img:hover {
-  max-width: 250px;
+  max-width: 300px;
 }
 .destino h4 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 .destino p {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 10px;
-}
-.destino ul {
-  list-style: upper-roman;
-  padding: 0;
-}
-.destino ul li {
-  font-size: 14px;
-  margin-bottom: 1.5rem;
-  padding-inline: 20px;
-}
-.destino ul li:last-child {
-  margin-bottom: 0;
 }
 
 .catalogo-t {

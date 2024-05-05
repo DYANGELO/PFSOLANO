@@ -14,6 +14,7 @@
     img{
         height: 250px;
         width: 250px;
+       
     }
     h5{
         margin-top: 30px;
@@ -23,8 +24,26 @@
         margin: 30px;
         
     }
-
+    .az-nosotros{
+        border-radius: 50%;
+        width: 200px;
+        padding: 5px;
+        height: 200px;
+    }
 }    
+
+.main-title{
+    font-size: 36px;  
+    color: #000000;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 30px;
+}
 
  
 
