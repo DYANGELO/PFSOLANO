@@ -22,6 +22,24 @@
     }
 }
 
+.catalogo-t{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #2c9ce780;
+    h1{
+      margin: 20px;
+      padding: 10px;
+      transition: all 1.2s;
+      animation: fadeIn 1s ease-out;
+      &:hover{
+        text-shadow: 2px 2px 4px #da141480;
+        font-size: 60px;
+      }
+    }
+  }
+
+
 .sub{
  max-width: 100%;
  margin: 10px;
