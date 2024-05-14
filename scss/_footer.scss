@@ -1,0 +1,82 @@
+footer {
+    margin: 5px;
+    bottom: 0;
+    height: 50%;
+    width: 99.2%;
+    background-color: #078832;
+    color: #fff;  
+    display: flex;
+    display: inline-block;
+    border-radius: 25px;
+    
+    .logo-d{
+      width: 200px;
+      height: 200px;
+      padding: 2px 0;
+    }
+  
+    .derechos{
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+      width: 100%;
+      padding: 5px 0;
+    }
+  
+    .contenedor-2 {
+      display: flex;
+      justify-content: space-between;
+      
+      .apartado-a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        ol{
+          margin-top: auto;
+          list-style: none;
+  
+          .title-f{
+            font-size: 35px;
+            margin-bottom: 5px;
+          }
+  
+          li{
+            margin-bottom: 15px;
+            
+  
+          }
+        }
+      }
+    }
+  
+    .contenido-footer {
+      display: flex;
+      align-items: center;
+      
+      .link-redes {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        
+        .social-media-link {
+          display: flex;
+          align-items: center;
+          justify-items: flex-end;
+          position: relative;
+          margin: 0 10px; 
+          
+          img {
+            width: 30px;
+            height: auto;
+            transition: all 1s;
+            
+            &:hover{
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
