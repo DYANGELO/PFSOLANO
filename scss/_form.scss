@@ -3,9 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
-    background-color: #f2f2f2; 
-
+    height: 70vh; 
+    
     form {
         width: 80%; 
         max-width: 400px; 
@@ -46,4 +45,9 @@
             }
         }
     }
+}
+
+
+.title-fm{
+    padding-top: 15px;
 }

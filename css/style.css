@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -100,7 +101,7 @@
   height: 250px;
   width: 250px;
 }
-.apartado-a1 h5 {
+.apartado-a1 h {
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -200,6 +201,7 @@ h1 {
   border-radius: 10px;
   background-color: #000000;
   font-size: 24px;
+  padding: 5px;
 }
 
 footer {
@@ -338,8 +340,7 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f2f2f2;
+  height: 70vh;
 }
 .formulario form {
   width: 80%;
@@ -377,6 +378,53 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   background-color: #0056b3;
 }
 
+.title-fm {
+  padding-top: 15px;
+}
+
+.pqrs {
+  height: 100vh;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pqrs h1 {
+  text-align: center;
+}
+.pqrs form {
+  display: flex;
+  flex-direction: column;
+}
+.pqrs label {
+  margin-bottom: 5px;
+}
+.pqrs input[type=text],
+.pqrs input[type=email],
+.pqrs input[type=tel],
+.pqrs textarea,
+.pqrs select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.pqrs input[type=submit] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.pqrs input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -409,23 +457,8 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   }
 }
 @media only screen and (max-width: 490px) {
-  .footer {
-    padding: 1px;
-  }
-  .footer ol .title-f {
-    font-size: 20px;
-  }
-  .footer .logo-d {
-    width: 175px;
-    height: 175px;
-  }
-  .footer .link-redes {
-    flex-direction: column;
-  }
-  .footer .link-redes .social-media-link {
-    padding: 10px;
-  }
   .navbar .contenedor {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -435,13 +468,10 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   .navbar .contenedor .izquierda .boton input[type=text] {
     padding: 3px;
     margin-right: 3px;
-    width: auto;
-    height: auto;
   }
   .navbar .contenedor .izquierda .boton button[type=submit] {
-    padding: 3px 8px;
-    width: auto;
-    height: auto;
+    padding: 3px 2px;
+    margin: 2px;
   }
   .navbar .contenedor .izquierda .logo {
     font-size: 18px;
@@ -450,6 +480,60 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   }
   .navbar .nav-links {
     margin-right: 0;
+  }
+  .derechos {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+    padding: 5px 0;
+  }
+  .contenedor-2 {
+    display: flex;
+    flex-direction: column; /* Para tamaños de pantalla más pequeños */
+    justify-content: space-between;
+  }
+  .contenedor-2 .apartado-a {
+    display: flex;
+    flex-direction: column; /* Para tamaños de pantalla más pequeños */
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-2 .apartado-a ol {
+    margin-top: auto;
+    list-style: none;
+  }
+  .contenedor-2 .apartado-a ol .title-f {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .contenedor-2 .apartado-a ol li {
+    margin-bottom: 15px;
+  }
+  .contenido-footer {
+    display: flex;
+    flex-direction: column; /* Para tamaños de pantalla más pequeños */
+    align-items: center;
+  }
+  .contenido-footer .link-redes {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+  .contenido-footer .link-redes .social-media-link {
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+    position: relative;
+    margin: 0 10px;
+  }
+  .contenido-footer .link-redes .social-media-link img {
+    width: 30px;
+    height: auto;
+    transition: all 1s;
+  }
+  .contenido-footer .link-redes .social-media-link img:hover {
+    width: 50px;
   }
   .titulo {
     padding: 20px;
@@ -464,20 +548,6 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   }
   .container .destino .imagen img:hover {
     max-width: 200px;
-  }
-  .destino {
-    width: 95%;
-  }
-  .destino .imagen {
-    float: none;
-    margin-bottom: auto;
-  }
-  .apartado-a1 {
-    flex-direction: column;
-  }
-  .contenedor .boton .button {
-    align-items: center;
-    flex-direction: column;
   }
 }
 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../Imagenes\5.png" type="image/x-icon"> 
+    <meta name="keywords" content="Destinos, Aventuras, Experiencias, Planificación, Asesoramiento, Viajes, Comodidad, Servicios, Flexibilidad, Financiamiento, Emoción, Exploración, Conveniencia, Expertos, Descubrimiento, Relajación, Alojamiento, Transporte, Reservas, Soporte">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Peticiones, Quejas y Reclamos | PQR´S</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="contenedor">
+              <div class="izquierda">
+                <a href="../index.html" class="logo">DYANGEL´S AGENCY</a>
+                <form class="boton">
+                  <input type="text" placeholder="Buscar...">
+                  <button type="submit">Buscar</button>
+                </form>
+              </div>
+             
+            </div>
+            <div>
+              <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="form.html">Postulate</a></li>
+                <li><a href="./pqrs.html">PQR´S</a></li>
+                <li><a href="#footer">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="pqrs">
+            <h1>¿Como podemos ayudarte?</h1>
+            
+            <form action="procesar_pqrs.php" method="post">
+            <label for="tipo">Tipo:</label>
+            <select name="tipo" id="tipo">
+                <option value="peticion">Petición</option>
+                <option value="queja">Queja</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="sugerencia">Sugerencia</option>
+            </select>
+        
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="identificacion">Número de Identificación:</label>
+            <input type="text" id="identificacion" name="identificacion" required>
+        
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+        
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+        
+            <input type="submit" value="Enviar">
+            </form>
+        </div> 
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="contenedor-2">
+          <div class="apartado-a">
+            <img class="logo-d" src="../Imagenes/Untitled Design.png" alt="Logo DYANGEL´S">
+            <ol>
+              <li class="title-f">DYANGEL´S AGENCY</li>
+              <li>Dyan.ag@gmail.com</li>
+              <li>3197128500</li>
+              <li>Cra. 68b #24-39</li>
+            </ol>
+          </div>
+          <div class="contenido-footer">
+            
+            <div class="link-redes">
+             
+              <a href="https://www.facebook.com">
+              <div class="social-media-link">
+                <img class="facebook" src="../Imagenes/pngegg.png" alt="Imagen facebook">
+              </div>
+            </a>
+            <a href="https://www.instagram.com">
+              <div class="social-media-link">
+                <img class="instagram" src="../Imagenes/insta.png" alt="Imagen  instagram">
+              </div>
+            </a>
+            <a href="https://www.google.com/intl/es-419/gmail/about/">
+              <div class="social-media-link">
+                <img class="gmail" src="../Imagenes/Gmail.png" alt="Imagen gmail">
+              </div>
+            </a>
+            <a href="https://www.whatsapp.com/?lang=es_LA">
+              <div class="social-media-link">
+                <img class="whatsapp" src="../Imagenes/pngwing.com.png" alt="Imagen whatsapp">
+              </div>
+            </a>
+            <a href="https://twitter.com/?lang=es">
+              <div class="social-media-link">
+                <img class="twitter" src="../Imagenes/twitter.png" alt="Imagen twitter">
+              </div>
+            </a>
+            </div>  
+          </div>
+         
+        </div>
+        <div class="derechos">
+          <small>&copy; 2024 <b>DYANGEL´S COMPANY</b> - Todos los Derechos Reservados</small>
+        </div>
+      </footer> 
+
+</body>
+</html>
