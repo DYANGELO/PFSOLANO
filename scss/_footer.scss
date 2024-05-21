@@ -29,23 +29,23 @@ footer {
       
       .apartado-a{
         display: flex;
-        justify-content: center;
         align-items: center;
-        
-        ol{
-          margin-top: auto;
-          list-style: none;
 
-          .title-f{
-            font-size: 35px;
-            margin-bottom: 5px;
-          }
-  
-          li{
-            margin-bottom: 15px;
-          }
-
+        .title-f{
+          font-size: 35px;
         }
+
+        .info {
+          margin-left: 10px;
+        }
+
+        p {
+          margin-bottom: 5px;
+          padding: 3px;
+        }
+  
+
+        
       }
     }
   
