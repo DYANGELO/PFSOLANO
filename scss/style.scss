@@ -7,6 +7,11 @@
 @import  "_form";
 @import "_pqrs";
 
+$general-color: #627347;
+$text-color: #f9f9f9; 
+$title: "Bebas Neue", sans-serif;
+$text: "Exo 2", sans-serif;
+
 
 @keyframes fadeIn {
   from {
@@ -474,6 +479,14 @@
 }
 
 @media only screen and (max-width: 450px) {
+
+  .navbar-brand{
+    font-size: 25px;
+  }
+
+  .nav-link{
+    font-size: 15px;
+  }
 
   .title-f {
     font-size: 35px;

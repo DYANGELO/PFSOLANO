@@ -1,7 +1,47 @@
+$general-color: #627347;
+$text-color: #f9f9f9; 
+$title: "Bebas Neue", sans-serif;
+$text: "Exo 2", sans-serif;
+
 .navbar-brand{
-    font-size: 25px;
+    font-size: 42px;
     margin: 15px;
     padding: 15px;
+    font-family: $title;
   }
 
+.collapse{
+  margin: 5px 10px;
+  padding: 10px 0;
+  font-family: $title;
+
+  form{
+    .form-control{
+      border-color: $general-color;
+    }
+    .btn{
+      border-color: $general-color;
+      color: $general-color;
+      &:hover{
+        background-color: $general-color;
+        color: $text-color;
+      }
+    }
+  }
+
+  .navbar-nav{
+    padding: 0 20px;
+    
+    .nav-item{
+      padding: 0 15px;
+      font-size: 18px;
+      transition: all 1s;
+      &:hover{
+        border-radius: 10px;
+        background-color: $general-color;
+        padding: 5px;
+      }
+    }
+  }
+}
 

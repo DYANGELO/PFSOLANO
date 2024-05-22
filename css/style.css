@@ -46,6 +46,7 @@
   padding: 10px;
   transition: all 1.2s;
   animation: fadeIn 1s ease-out;
+  font-family: "Bebas Neue", sans-serif;
 }
 .catalogo-t h1:hover {
   text-shadow: 2px 2px 4px rgba(218, 20, 20, 0.5019607843);
@@ -65,6 +66,7 @@
   padding: 10px 0;
   animation: zoomInOut 4s ease-in-out infinite;
   margin-right: 2%;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .formulario-s {
@@ -129,9 +131,40 @@ h1 {
 }
 
 .navbar-brand {
-  font-size: 25px;
+  font-size: 42px;
   margin: 15px;
   padding: 15px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.collapse {
+  margin: 5px 10px;
+  padding: 10px 0;
+  font-family: "Bebas Neue", sans-serif;
+}
+.collapse form .form-control {
+  border-color: #627347;
+}
+.collapse form .btn {
+  border-color: #627347;
+  color: #627347;
+}
+.collapse form .btn:hover {
+  background-color: #627347;
+  color: #f9f9f9;
+}
+.collapse .navbar-nav {
+  padding: 0 20px;
+}
+.collapse .navbar-nav .nav-item {
+  padding: 0 15px;
+  font-size: 18px;
+  transition: all 1s;
+}
+.collapse .navbar-nav .nav-item:hover {
+  border-radius: 10px;
+  background-color: #627347;
+  padding: 5px;
 }
 
 footer {
@@ -139,11 +172,12 @@ footer {
   bottom: 0;
   height: 50%;
   width: 99.2%;
-  background-color: #078832;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.6509803922);
   display: flex;
   display: inline-block;
   border-radius: 25px;
+  background-color: #627347;
+  box-shadow: box-shadow 2px 2px 4px rgba(2, 0, 1, 0.5);
 }
 footer .logo-d {
   width: 200px;
@@ -151,11 +185,13 @@ footer .logo-d {
   padding: 2px 0;
 }
 footer .derechos {
+  letter-spacing: 3px;
   display: flex;
   justify-content: center;
   margin-top: auto;
   width: 100%;
   padding: 5px 0;
+  font-family: "Bebas Neue", sans-serif;
 }
 footer .contenedor-2 {
   display: flex;
@@ -166,14 +202,17 @@ footer .contenedor-2 .apartado-a {
   align-items: center;
 }
 footer .contenedor-2 .apartado-a .title-f {
-  font-size: 35px;
+  padding: 0;
+  font-size: 45px;
+  font-family: "Bebas Neue", sans-serif;
 }
 footer .contenedor-2 .apartado-a .info {
   margin-left: 10px;
 }
 footer .contenedor-2 .apartado-a p {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   padding: 3px;
+  font-family: "Bebas Neue", sans-serif;
 }
 footer .contenido-footer {
   display: flex;
@@ -200,13 +239,7 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   width: 50px;
 }
 
-.titulo {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 35px;
-}
-.titulo h1 {
+h1 {
   font-size: 36px;
   color: #000000;
   margin: 15px;
@@ -215,6 +248,7 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1s ease-out;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .contenedor-3 {
@@ -233,7 +267,7 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   transition: all 1s;
 }
 .destino:hover {
-  background-color: #078832;
+  background-color: #627347;
   width: 100%;
 }
 .destino:hover p {
@@ -258,10 +292,12 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
 .destino h2 {
   font-size: 25px;
   margin-bottom: 10px;
+  font-family: "Bebas Neue", sans-serif;
 }
 .destino p {
   font-size: 20px;
   margin-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
 }
 
 .formulario {
@@ -739,6 +775,12 @@ footer .contenido-footer .link-redes .social-media-link img:hover {
   }
 }
 @media only screen and (max-width: 450px) {
+  .navbar-brand {
+    font-size: 25px;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
   .title-f {
     font-size: 35px;
   }

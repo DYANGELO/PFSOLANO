@@ -1,3 +1,9 @@
+$general-color: #627347;
+$text-color: #f9f9f9; 
+$title: "Bebas Neue", sans-serif;
+$text: "Exo 2", sans-serif;
+
+
 .spc-1{
     margin: 2rem;
     padding: 1%;
@@ -32,6 +38,7 @@
       padding: 10px;
       transition: all 1.2s;
       animation: fadeIn 1s ease-out;
+      font-family: $title;
       &:hover{
         text-shadow: 2px 2px 4px #da141480;
         font-size: 60px;
@@ -53,6 +60,7 @@
         padding: 10px 0;
         animation: zoomInOut 4s ease-in-out infinite;
         margin-right: 2%;
+        font-family: $title;
        }  
 }
 
