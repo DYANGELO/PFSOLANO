@@ -1,15 +1,17 @@
+$general-color: #627347;
+$text-color: #f9f9f9; 
+$title: "Bebas Neue", sans-serif;
+$text: "Exo 2", sans-serif;
+$color-cards: #d3d7d2;
+
 .pqrs {
-  height: 100vh;
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-  h1 {
-    text-align: center;
-  }
+  background-color: white;
 
   form {
     display: flex;
@@ -18,6 +20,7 @@
 
   label {
     margin-bottom: 5px;
+    font-family: $text;
   }
 
   input[type="text"],
@@ -36,14 +39,14 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: $general-color;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
   }
 
   input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: $color-cards;
   }
 }
 

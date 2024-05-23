@@ -2,13 +2,15 @@ $general-color: #627347;
 $text-color: #f9f9f9; 
 $title: "Bebas Neue", sans-serif;
 $text: "Exo 2", sans-serif;
-
+$color-cards: #d3d7d2;
 
 .spc-1{
     margin: 2rem;
     padding: 1%;
+    
     .col{
         padding: 25px;
+        
         .card{
             width: 100%;
             border-radius: 50px;
@@ -39,6 +41,7 @@ $text: "Exo 2", sans-serif;
       transition: all 1.2s;
       animation: fadeIn 1s ease-out;
       font-family: $title;
+      
       &:hover{
         text-shadow: 2px 2px 4px #da141480;
         font-size: 60px;
@@ -64,19 +67,24 @@ $text: "Exo 2", sans-serif;
        }  
 }
 
-.formulario-s{
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.card-body{
+   
 
-    .mb-3{
-        margin: 25px;
+
+    h3{
+        font-family: $title;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
-    .btn{
-        margin: 25px;
+    .card-text{
+        font-family: $text;
+    }
+
+    li{
+        font-family: $text;
+    }
+
+    p{
+        font-family: $text;
     }
 }
    

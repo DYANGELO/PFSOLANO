@@ -69,19 +69,18 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
-.formulario-s {
-  padding: 20px;
-  margin: 20px auto;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.card-body h3 {
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.formulario-s .mb-3 {
-  margin: 25px;
+.card-body .card-text {
+  font-family: "Exo 2", sans-serif;
 }
-.formulario-s .btn {
-  margin: 25px;
+.card-body li {
+  font-family: "Exo 2", sans-serif;
+}
+.card-body p {
+  font-family: "Exo 2", sans-serif;
 }
 
 * {
@@ -97,23 +96,28 @@
   border: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
 }
 .apartado-a1 img {
   height: 250px;
   width: 250px;
 }
-.apartado-a1 h {
+.apartado-a1 h2 {
   margin-top: 30px;
   margin-left: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .apartado-a1 P {
   margin: 30px;
+  font-family: "Exo 2", sans-serif;
 }
 .apartado-a1 .az-nosotros {
   border-radius: 50%;
   width: 200px;
   padding: 5px;
   height: 200px;
+  margin: 0 10px;
 }
 
 h1 {
@@ -185,6 +189,9 @@ footer .logo-d {
   padding: 2px 0;
 }
 footer .derechos {
+  margin: 0 0 0 0 10px;
+  border-radius: 10px;
+  background-color: #d3d7d2;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -229,6 +236,7 @@ footer .contenido-footer .link-redes .social-media-link {
   justify-items: flex-end;
   position: relative;
   margin: 0 10px;
+  padding: 10px 0px;
 }
 footer .contenido-footer .link-redes .social-media-link img {
   width: 30px;
@@ -293,6 +301,7 @@ h1 {
   font-size: 25px;
   margin-bottom: 10px;
   font-family: "Bebas Neue", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .destino p {
   font-size: 20px;
@@ -316,6 +325,7 @@ h1 {
 }
 .formulario form .form-group {
   margin-bottom: 15px;
+  font-family: "Exo 2", sans-serif;
 }
 .formulario form .form-group label {
   display: block;
@@ -333,13 +343,13 @@ h1 {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #627347;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .formulario form button[type=submit]:hover {
-  background-color: #0056b3;
+  background-color: #d3d7d2;
 }
 
 .title-fm {
@@ -347,16 +357,13 @@ h1 {
 }
 
 .pqrs {
-  height: 100vh;
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.pqrs h1 {
-  text-align: center;
+  background-color: white;
 }
 .pqrs form {
   display: flex;
@@ -364,6 +371,7 @@ h1 {
 }
 .pqrs label {
   margin-bottom: 5px;
+  font-family: "Exo 2", sans-serif;
 }
 .pqrs input[type=text],
 .pqrs input[type=email],
@@ -380,13 +388,17 @@ h1 {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #627347;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 .pqrs input[type=submit]:hover {
-  background-color: #0056b3;
+  background-color: #d3d7d2;
+}
+
+body {
+  background-color: #d3d7d2;
 }
 
 @keyframes fadeIn {
@@ -434,8 +446,8 @@ h1 {
     justify-content: center;
     margin-top: auto;
     width: 100%;
-    padding: 5px 0;
-    font-size: 12px;
+    padding: 2px 0;
+    font-size: 2px;
   }
   .contenedor-2 {
     display: flex;

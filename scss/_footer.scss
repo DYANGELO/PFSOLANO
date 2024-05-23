@@ -25,6 +25,9 @@ footer {
     }
   
     .derechos{
+      margin: 0 0 0 0 10px;
+      border-radius: 10px;
+      background-color: #d3d7d2;
       letter-spacing: 3px;
       display: flex;
       justify-content: center;
@@ -78,7 +81,7 @@ footer {
           justify-items: flex-end;
           position: relative;
           margin: 0 10px; 
-          
+          padding: 10px 0px;
           img {
             width: 30px;
             height: auto;

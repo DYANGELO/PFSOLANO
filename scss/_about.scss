@@ -1,3 +1,10 @@
+$general-color: #627347;
+$text-color: #f9f9f9; 
+$title: "Bebas Neue", sans-serif;
+$text: "Exo 2", sans-serif;
+$color-cards: #d3d7d2;
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,24 +18,28 @@
     border: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
     img{
         height: 250px;
         width: 250px;
        
     }
-    h{
+    h2{
         margin-top: 30px;
         margin-left: 30px;
+        font-family: $title;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     P{
         margin: 30px;
-        
-    }
+        font-family: $text;
+    }   
     .az-nosotros{
         border-radius: 50%;
         width: 200px;
         padding: 5px;
         height: 200px;
+        margin: 0 10px;
     }
 }    
 
@@ -46,5 +57,5 @@ h1{
     animation: fadeIn 1s ease-out;
 }
 
- 
+
 
